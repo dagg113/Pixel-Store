@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(180deg, #0f0f0f, #1a1a2e);
+  color: #ffffff;
+}
+
+.vendedor-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.titulo, .subtitulo {
+  text-align: center;
+  color: #00ffc8;
+  text-shadow: 2px 2px 4px #0ff;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-juego {
+  display: grid;
+  gap: 1rem;
+  background-color: #1e1e2f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffc8;
+}
+
+.formulario-juego input,
+.formulario-juego textarea,
+.formulario-juego select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a3f;
+  color: #fff;
+}
+
+.formulario-juego button {
+  padding: 0.75rem;
+  background-color: #00ffc8;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.formulario-juego button:hover {
+  transform: scale(1.05);
+  background-color: #00ffaa;
+}
+
+.preview-img {
+  width: 100px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.juego-card {
+  background-color: #29293d;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffc8;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.juego-card:hover {
+  transform: scale(1.03);
+}
+
+.juego-img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.juego-info {
+  padding: 1rem;
+}
+
+.juego-info h3 {
+  margin-bottom: 0.5rem;
+  color: #00ffd9;
+}
+
+.juego-info p {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.precio {
+  font-size: 1rem;
+  color: #00ff85;
+  font-weight: bold;
+}
+
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.editar, .eliminar {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.editar {
+  background-color: #ffef00;
+  color: #000;
+}
+
+.editar:hover {
+  background-color: #fff843;
+}
+
+.eliminar {
+  background-color: #ff3b3b;
+  color: #fff;
+}
+
+.eliminar:hover {
+  background-color: #ff6262;
+}
